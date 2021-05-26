@@ -7,6 +7,9 @@
 #include "moduleskravchenko.h"
 using namespace std;
 
+
+
+
 int main()
 {
     _setmode(_fileno(stdout), _O_U16TEXT);
@@ -22,6 +25,9 @@ int main()
     wcin >> y;
     wcout << L"z=" << endl;
     wcin >> z;
+    wcout << L"x(16-кова система): " << hex << x << dec << endl;
+    wcout << L"y(16-кова система): " << hex << y << dec << endl;
+    wcout << L"z(16-кова система): " << hex << z << dec << endl;
     wcout << L"a=" << endl;
     wcin >> a;
     wcout << L"b=" << endl;
@@ -36,7 +42,7 @@ int main()
         wcout << L"false" << endl;
     }
 
-    wcout << L"S=" << s_calculation(x, y, z);
+    wcout << L"S=" << s_calculation(x, y, z) << endl;
     system("pause");
 
     return 0;
