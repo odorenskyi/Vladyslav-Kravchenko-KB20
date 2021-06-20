@@ -6,10 +6,6 @@
 #include <fcntl.h>
 #include "moduleskravchenko.h"
 using namespace std;
-
-
-
-
 int main()
 {
     _setmode(_fileno(stdout), _O_U16TEXT);
@@ -17,7 +13,8 @@ int main()
     _wsetlocale(LC_ALL,L"");
     SetConsoleOutputCP(CP_UTF8);
     SetConsoleCP(CP_UTF8);
-    int x, y, z, a, b, q, w;
+    int x, y, z, q, w;
+wchar_t a,b;
     wcout << L"___===Виконав студент групи КБ20 Кравченко Владислав Олегович © ===___" << endl;
     wcout << L"x=" << endl;
     wcin >> x;
@@ -41,9 +38,7 @@ int main()
     {
         wcout << L"false" << endl;
     }
-
     wcout << L"S=" << s_calculation(x, y, z) << endl;
     system("pause");
-
     return 0;
 }
